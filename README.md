@@ -11,6 +11,9 @@ A Retrieval-Augmented Generation (RAG) tool for institution-specific essay analy
  
  🛠️ Tech StackComponentTechnologyRoleLanguagePython 3.13Core application logic and data processing.AI BrainGoogle Gemini 2.5 FlashAdvanced LLM for generating "Gap Analysis" reports.Vector DBChromaDBSemantic memory for indexing and retrieving accepted essays.Web UIStreamlitInteractive frontend for user input and results display.VisualizationPlotlyDynamic gauge charts for fit-score visualization.
  🧠 How It Works (The RAG Pipeline):
+ 
   1.Data Ingestion: Successful essays are cleaned, chunked, and converted into mathematical vectors (embeddings).
+  
   2.Semantic Retrieval: When a student pastes a draft, the system searches the database for the 2 most similar successful essays from the same university.
+  
   3.Context Injection: These examples are injected into a specialized "Admissions Dean" prompt.Analysis: Gemini 2.5 identifies precisely what is missing in the student's draft compared to the winners.# SOP_Analyzer
